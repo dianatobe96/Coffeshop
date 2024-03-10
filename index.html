@@ -1,279 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffeshop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <p>Coffe</p>
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Blog</a>
-            <a href="#">Pages</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+      <nav class="d-flex align-items-center justify-content-between">
+        <h1>Coffee Shop</h1>
 
-        </nav>
-
+        <div class="pages">
+          <a href="#home">Home</a>
+          <a href="#about">Menu</a>
+          <a href="#categories">Categories</a>
+          <a href="#menu">Menu</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <section
+        id="home"
+        class="d-flex align-items-center justify-content-between"
+      >
+        <div class="left-side">
+          <span class=""><p>Welcome to coffee hut</p></span>
+          <h2>Heal the world with coffee</h2>
+          <h3>
+            The aromatic elixir that awakens the mind, fuels creativity, and
+            ignites the spirit with each invigorating sip
+          </h3>
+          <button type="button">See menu</button>
+        </div>
 
-        <section id="home">
-            <div class="homeleft">
-            <h2>Heal the world with coffee</h2>
-            <h3> the aromatic elixir that awakens the mind, fuels creativity, and ignites the spirit with each
-                invigorating sip</h3>
-            </div>
-               <button type="button">see menu</button>
-            <div class="homeright">
-                <img src="assets/coffe-home.jpg" alt="coffe">
-            </div>
+        <div class="right-side">
+          <img src="./assets/images/coffee-home.jpg" alt="Cup of coffee" />
+        </div>
+      </section>
 
+      <section id="about" class="d-flex align-items-center">
+        <div class="left-side">
+          <h4>About us</h4>
+          <h2>We are the bes quality Coffee maker</h2>
+          <h3>
+            Step into our cozy coffee haven, where the aroma of freshly brewed
+            beans dances in the air,welcoming you to savor the perfect cup of
+            indulgence. Discover a sanctuary where every sip tells a story,and
+            every moment is a celebration of the rich tapestry of coffee
+            culture.
+          </h3>
+
+          <ul class="list">
+            <li>Experienced Chefs</li>
+            <li>Fresh & Organic Foods</li>
+            <li>Different Coffee & Drinks</li>
+          </ul>
+        </div>
+
+        <div class="right-side">
+          <img
+            class="img-front"
+            src="./assets/images/photo2.jpg"
+            alt="Cup of coffee"
+          />
+          <img
+            class="img-back"
+            src="./assets/images/photo3.jpg"
+            alt="Cup of coffee"
+          />
+        </div>
+      </section>
+
+      <section id="why-choose-us" class="d-flex align-items-center">
+        <div class="left-side">
+          <h4>Why choose us</h4>
+          <h1>Best quality food and coffee maker</h1>
+
+          <p>
+            This coffee shop stands out for its exceptional brews, cozy
+            ambiance, and friendly service, making it the best choice for any
+            coffee lover.
+          </p>
+
+          <ul>
+            <li>
+              <div class="left-side">
+                <h2>High quality coffee</h2>
+                <p>Rich, aromatic, smooth, premium, satisfying.</p>
+              </div>
+              <div class="right-side">
+                <img
+                  class="quality-icon"
+                  src="./assets/icons/iconcoffe.svg"
+                  alt="Quality Icon"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="left-side">
+                <h2>Best chef & Team</h2>
+                <p>Skilled, innovative, passionate, experienced, creative.</p>
+              </div>
+              <div class="right-side">
+                <img
+                  class="cheficon"
+                  src="./assets/icons/iconchef.svg"
+                  alt="cheficon"
+                />
+              </div>
+            </li>
+
+            <li>
+              <div class="left-side">
+                <h2>Promo and deal</h2>
+                <p>Discounts, deals, specials, loyalty rewards.</p>
+              </div>
+              <div class="right-side">
+                <img
+                  class="promoicon"
+                  src="./assets/icons/iconpromo.svg"
+                  alt="promo"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-side">
+          <img src="./assets/photo images/5.jpg" alt="photo5" />
+          <p>
+            "Coffee shops: a haven for caffeine, community, and relaxation
+            vibes."
+            <br />
+            Alen Barg
+          </p>
+        </div>
+      </section>
+
+      <section id="categories">
+        <header>
+          <h2>Coffee Category</h2>
+          <h4>
+            Awaken your senses with a rich, aromatic blend of freshly brewed
+            coffee.
+          </h4>
+        </header>
+
+        <section class="categories-info d-flex align-items-center">
+          <div class="left-side">
+            <h2>Cappuccino</h2>
+            <p>Rich, frothy espresso with foam</p>
+            <img
+              class="icon"
+              src="./assets/icons/icon1left.svg"
+              alt="Cappuccino Icon"
+            />
+
+            <h2>Cafe latte</h2>
+            <p>Creamy espresso with steamed milk.</p>
+            <img
+              class="icon"
+              src="./assets/icons/Icon2left.svg"
+              alt="Cafe Latte Icon"
+            />
+
+            <h2>Dark coffee</h2>
+            <p>Bold, robust, intense, rich flavor.</p>
+            <img
+              class="icon"
+              src="./assets/icons/Icon3left.svg"
+              alt="Dark Coffee Icon"
+            />
+          </div>
+
+          <img src="./assets/images/photo4.jpg" alt="Cup of coffee" />
+
+          <div class="right-side">
+            <h2>Turkish coffee</h2>
+            <p>Strong, aromatic, finely ground espresso.</p>
+            <img
+              class="icon"
+              src="./assets/icons/icon1right.svg"
+              alt="Turkish Coffee Icon"
+            />
+
+            <h2>Pancakes</h2>
+            <p>Fluffy, golden, sweet breakfast treat.</p>
+            <img
+              class="pancakesicon"
+              src="./assets/icons/icon2right.svg"
+              alt="pancakes"
+            />
+
+            <h2>Coffee Bag</h2>
+            <p>Convenient, portable, ground coffee pouch.</p>
+            <img
+              class="coffeebagicon"
+              src="./assets/icons/Icon3right.svg"
+              alt="coffee bag"
+            />
+          </div>
         </section>
+      </section>
 
+      <section id="menu">
+        <h1>Our Favorites Menu</h1>
 
+        <div class="menu-list d-flex align-items-center">
+          <article class="card">
+            <img src="./assets/images/photo6.jpg" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
 
-        <section id="about">
-            <div class="aboutus">
-                <h4>About us</h4>
-                  <h2><pre>We are the bes quality 
-Coffe maker</pre></h2>
-                <h3><pre>Step into our cozy coffee haven, where the aroma of freshly brewed beans 
-dances in the air,welcoming you to savor the perfect cup of indulgence.
-Discover a sanctuary where  every sip tells a story,and every moment is 
-a celebration of the rich tapestry of coffee culture.</pre></h3>
-                 
-                  &#x2611;
-                  &#x2611
-                  &#x2611
-            </div>
+          <article class="card">
+            <img src="./assets/images/photo7.jpg" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
 
-            <div class="photo2">
-                <img src="assets/photo2.jpg" alt="photo2">
-             </div>
-             <div class="photo3"> 
-                <img src="assets/photo3.jpg" alt="photo3">
-            </div>
-         </section>
+          <article class="card">
+            <img src="./assets/images/photo8.jpg" alt="photo12" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
 
-        
-         <section>
-            <h2>Coffe Category</h2>
-              <h4>Awaken your senses with a rich, aromatic blend of freshly brewed coffee.</h4>
+          <article class="card">
+            <img src="./assets/images/photo9.jpg" alt="photo9" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
 
-             <div class="iconsleft">
-                <h2>Cappuccino</h2>
-                <p>Rich, frothy espresso with foam</p>
-                <img class="Cappuccinoicon"  src="assets/icon1left.svg" alt="Cappuccino">
-              
+          <article class="card">
+            <img src="./assets/images/photo10.jpg" alt="photo10" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
 
-                <h2>Cafe latte</h2>
-                <p>Creamy espresso with steamed milk.</p>
-                <img class="cafelatteicon" src="assets/Icon2left.svg" alt="Cafe latte">
+          <article class="card">
+            <img src="./assets/images/photo11.jpg" alt="photo11" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
 
-                <h2>Dark coffee</h2>
-                <p>Bold, robust, intense, rich flavor.</p>
-                <img class="darkcoffeicon" src="assets/Icon3left.svg" alt="darkcoffe">
-            </div>
+          <article class="card">
+            <img src="./assets/images/photo12.jpg" alt="photo12" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
 
-            <img src="assets/photo4.jpg" alt="photo4">
+          <article class="card">
+            <img src="./assets/images/photo12.jpg" alt="photo12" />
+            <h4>Coffee beans</h4>
+            <h6>$30</h6>
+          </article>
+        </div>
+      </section>
 
-            <div class="iconsright">
-                <h2>Turkish coffee</h2>
-                <p>Strong, aromatic, finely ground espresso.</p>
-                <img class="turkishcoffee"  src="assets/icon1right.svg" alt="turkishcoffeicon">
-              
+      <section id="team">
+        <h1>Meet our Team</h1>
 
-                <h2>Pancakes</h2>
-                <p>Fluffy, golden, sweet breakfast treat.</p>
-                <img class="pancakesicon" src="assets/icon2right.svg" alt="pancakes">
+        <div class="team-list d-flex align-items-center">
+          <article class="card">
+            <img src="./assets/images/chef1.jpg" alt="Chef Photo" />
+            <h4>Bulbul Hassan</h4>
+            <h6>Chef</h6>
+          </article>
 
-                <h2>Coffee Bag</h2>
-                <p>Convenient, portable, ground coffee pouch.</p>
-                <img class="coffeebagicon" src="assets/Icon3right.svg" alt="coffee bag">
-            </div>
-         </section>
+          <article class="card">
+            <img src="./assets/images/chef2.jpg" alt="Founder Photo" />
+            <h4>Lia Smith</h4>
+            <h6>Founder</h6>
+          </article>
 
-         <section id="whychooseus">
-             
-            <div class="wculeft">
-            <img src="assets/photo 5.jpg" alt="photo5">
-            <p>"Coffee shops: a haven for caffeine, community, and relaxation vibes."</p>
-            <h4>Alen Barg</h4>
-            </div>
+          <article class="card">
+            <img src="./assets/images/chef3.jpg" alt="Specialist Photo" />
+            <h4>Michael Nur</h4>
+            <h6>Specialist</h6>
+          </article>
 
-            <div class="wcuright">
-                <h4>Why choose us</h4>
-                <h1><pre>Best quality food and 
-coffee maker</pre></h1>
+          <article class="card">
+            <img src="./assets/images/chef4.jpg" alt="Owner Photo" />
+            <h4>Munna Kathy</h4>
+            <h6>Owner</h6>
+          </article>
+        </div>
+      </section>
 
-             <p>This coffee shop stands out for its exceptional brews, cozy ambiance, and friendly service,
-                making it the best choice for any coffee lover.</p>
+      <section id="testimonials" class="d-flex align-items-center">
+        <div class="left-side">
+          <h1>Our customer say</h1>
+          <img src="./assets/icons/iconQuotes.svg" alt="quotes" />
 
-             <h2>High quality coffee</h2>
-             <p>Rich, aromatic, smooth, premium, satisfying.</p>
-             <img class="qualityicon" src="assets/iconcoffe.svg" alt="coffee"> 
-             
-             <h2>Best chef & Team</h2>
-             <p>Skilled, innovative, passionate, experienced, creative.</p>
-             <img class="cheficon" src="assets/iconchef.svg" alt="cheficon"> 
+          <p>
+            Fantastic coffee, cozy ambiance, friendly staff, delicious
+            pastries—my favorite spot for a caffeine fix
+          </p>
 
-             <h2>Promo and deal</h2>
-             <p>Discounts, deals, specials, loyalty rewards.</p>
-             <img class="promoicon" src="assets/iconpromo.svg" alt="promo"> 
-            </div>
+          <img src="./assets/images/photoEllipse.jpg" alt="" />
 
-         </section> 
-         
-         
-         <section id="menu">
-            <h1>Our Favorites Menu</h1>
+          <h4>William Carry</h4>
+          <h5>Founder & CEO</h5>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
 
-            <div class="top">
-                <img src="assets/photo6.jpg">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
+        <div class="right-side">
+          <img src="./assets/images/photo13.jpg" alt="Cup of coffee" />
+        </div>
+      </section>
 
-                 <img src="assets/photo7.jpg">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
+      <section id="clients">
+        <p>Partners & Clients</p>
+        <h1>We work with the best people</h1>
 
-                 <img src="assets/photo8.jpg" alt="photo12">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
+        <div class="client-list d-flex align-items-center">
+          <img src="./assets/images/client1.png" alt="Client Logo" />
+          <img src="./assets/images/client2.png" alt="Client Logo" />
+          <img src="./assets/images/client3.png" alt="Client Logo" />
+          <img src="./assets/images/client4.png" alt="Client Logo" />
+          <img src="./assets/images/client5.png" alt="Client Logo" />
+          <img src="./assets/images/client6.png" alt="Client Logo" />
+        </div>
+      </section>
+    </main>
 
-                 <img src="assets/photo9.jpg" alt="photo9">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
-            </div>
-
-            <div class="botton">
-                <img src="assets/photo10.jpg" alt="photo10">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
-
-                 <img src="assets/photo11.jpg" alt="photo11">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
-
-                 <img src="assets/photo12.jpg" alt="photo12">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
-
-                 <img src="assets/photo12.jpg" alt="photo12">
-                 <p>coffe beans</p>
-                 <h4>$30</h4>
-
-            </div>
-
-            <div class="iconmenu">
-                <img src="assets/iconbag.svg" alt="iconbag">
-                <img src="assets/iconheart.svg" alt="iconheart">
-                <img src="assets/iconeye.svg" alt="iconeye">
-
-            </div>
-        </section>
-
-        <section id="chef">
-            <h1>Meet our chef</h1>
-
-            <div class="photochef">
-
-                <img src="assets/chef1.jpg" alt="chef">
-                <p>Bulbul Hassan</p>
-                <h4>Chef</h4>
-
-                <img src="assets/chef2.jpg" alt="founder">
-                <p>Lia Smith</p>
-                <h4>Founder</h4>
-
-                <img src="assets/chef3.jpg" alt="seacilist">
-                <p>Michael Nur</p>
-                <h4>Seacialist</h4>
-
-                <img src="assets/chef4.jpg" alt="owner">
-                <p>Munna Kathy</p>
-                <h4>Owner</h4>
-            
-
-            </div>
-        </section>
-
-        <section id="testimonials">
-               <div class="tleft">
-                <h1>Our customer say</h1>
-                <img src="assets/iconQuotes.svg" alt="quotes">
-
-                <p><pre>Fantastic coffee, cozy ambiance, friendly staff, 
-delicious pastries—my favorite spot for a caffeine fix</pre></p>
-                <img src="assets/photoEllipse.jpg" alt="">
-
-                <p>William Carry</p>
-
-               </div>
-
-               <div class="tright">
-                <img src="assets/photo13.jpg" alt="">
-
-               </div>
-        
-
-        </section>
-
-        <section id="clients">
-            <h4><i>partners & clients</i></h4>
-            <h1>We work with the best people</h1>
-
-            <img src="assets/Logo.svg" alt="logo">
-
-        </section>
-</main>
-
-    <footer>
-        <img class="footheimg" src="assets/footherphoto.jpg" alt="foother">
-
-        <div class="fleft">
+    <footer id="contact" class="d-flex align-items-center">
+      <div class="left-side">
         <p>Foodtuck</p>
-        <p><pre> To our coffee oasis! Explore our menu,
- discover our story, and join our community. 
- Contact us for inquiries. Enjoy your brew!</pre></p>
-        </div>
+        <p>
+          To our coffee oasis! Explore our menu, discover our story, and join
+          our community. Contact us for inquiries. Enjoy your brew!
+        </p>
+      </div>
 
-        <div class="fmiddle">
-            <ul class="list">
-                <li>Home</li> 
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Team</li>
-                <li>Our Menu</li>
-            </ul>
+      <div class="right-side">
+        <p>Contact us</p>
 
-        </div>
-
-        <div class="fright">
-            <p>Contact us</p>
-
-            <img src="assets/iconMapPin.svg" alt="iconmap">
-            <p> 68 Rue Main, Toronto, Ontario</p>
-
-            <img src="assets/iconPhone.svg" alt="phone">
+        <ul>
+          <li>
+            <img src="./assets/icons/iconMapPin.svg" alt="iconmap" />
+            <p>68 Rue Main, Toronto, Ontario</p>
+          </li>
+          <li>
+            <img src="./assets/icons/iconPhone.svg" alt="phone" />
             <p>(619) 663-1266</p>
-
-            <img src="assets/iconEnvelope.svg" alt="mail">
+          </li>
+          <li>
+            <img src="./assets/icons/iconEnvelope.svg" alt="mail" />
             <p>coffesho@gmail.com</p>
-
-            <img src="assets/iconClock.svg" alt="clock">
+          </li>
+          <li>
+            <img src="./assets/icons/iconClock.svg" alt="clock" />
             <p>Mon-Sun/10AM - 8PM</p>
-
-        </div>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
