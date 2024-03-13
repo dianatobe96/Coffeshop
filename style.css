@@ -98,6 +98,7 @@ button:hover{
 }
 
 #about h4{font-size: 18px;}
+#about h2{font-size: 48px;}
 
 #about .right-side{padding-left: 40px;}
 
@@ -117,4 +118,34 @@ button:hover{
   top: 368px;
   left: 0;
   z-index: 1;
+}
+
+.square{
+  display: inline-block;
+  width: 34px;
+  height: 25px;
+  background-color: #EDEAE3;
+}
+
+.list li{
+  padding: 10px 0;
+}
+
+#why-choose-us .right-side{
+  position: relative;
+  flex: 0 0 50%;
+  text-align: right;
+}
+
+#why-choose-us .right-side p{
+  position: absolute;
+  top: 497px;
+  background-color: white;
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  left: 15.5%;
+  border-radius: 6px;
+  height: 46px;
 }
