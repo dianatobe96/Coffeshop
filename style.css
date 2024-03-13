@@ -52,7 +52,7 @@ section {
 .header-outer-wrapper {
   margin: 0;
   height: 100svh;
-  background: url("./assets/images/coffee_bean.png") no-repeat center center
+  background: url("./assets/images/coffee_bean.png") repeat center center
     #1e1e1e;
 }
 
@@ -161,6 +161,11 @@ button:hover {
   padding: 10px 0;
 }
 
+#why-choose-us .list-icon {
+  background-color: #bc9a6c;
+  padding: 13px 26px;
+}
+
 #why-choose-us ul {
   padding-left: 0;
 }
@@ -184,11 +189,6 @@ button:hover {
   height: 46px;
 }
 
-.list-icon {
-  background-color: #bc9a6c;
-  padding: 13px 26px;
-}
-
 #why-choose-us li {
   gap: 10px 20px;
   row-gap: 10px;
@@ -205,6 +205,28 @@ button:hover {
   margin: 40px 0 20px 0;
 }
 
+#categories {
+  & .left-side {
+    & li {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: auto;
+      align-items: center;
+    }
+  }
+
+  & .right-side {
+    text-align: right;
+
+    & li {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+    }
+  }
+}
+
 .categories-info ul {
   padding-left: 0;
 }
@@ -214,7 +236,7 @@ button:hover {
 
 .categories-info .list-icon {
   background-color: transparent;
-  padding: 24px 26px;
+  /* padding: 24px 26px; */
 }
 
 #menu h2,
@@ -230,6 +252,6 @@ button:hover {
   text-align: center;
 
   & p {
-    color: #BC9A6C;
+    color: #bc9a6c;
   }
 }
