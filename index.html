@@ -10,11 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <div class="header-outer-wrapper">
+    <div id="header-content" class="header-outer-wrapper hidden">
       <div class="header-wrapper">
         <header>
           <nav class="d-flex align-items-center justify-content-between">
@@ -52,7 +52,7 @@
       <!-- header-wrapper ends -->
     </div>
 
-    <div class="wrapper">
+    <div id="main-content" class="wrapper hidden">
       <main>
         <section id="about" class="d-flex">
           <div class="left-side">
@@ -365,7 +365,11 @@
         </section>
       </main>
     </div>
-    <!-- wrapper ends -->
+
+    <div class="loading">
+      <div class="loader"></div>
+    </div>
+
     <div class="foter-wrapper">
       <footer id="contact" class="d-flex align-items-center">
         <div class="left-side">
@@ -400,6 +404,7 @@
         </div>
       </footer>
     </div>
-    <!-- footer-wrapper ends -->
+
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -34,9 +35,31 @@ section {
 .primary-color {
   color: #bc9a6c;
 }
+
 .dark-color {
   color: #333333;
 }
+
+.hidden {
+  display: none !important;
+}
+
+/* Home section style */
+/* #home {
+  & .left-arrow, & .right-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  & .left-arrow {
+    left: 0;
+  }
+
+  & .right-arrow {
+    right: 0;
+  }
+} */
 
 .header-wrapper,
 .wrapper,
@@ -253,5 +276,30 @@ button:hover {
 
   & p {
     color: #bc9a6c;
+  }
+}
+
+/* Loader style */
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #bc9a6c;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
