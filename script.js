@@ -15,8 +15,24 @@ function loadPage() {
     }, 2000);
 }
 
+/**
+ * Get Menu button and change the text
+ */
+function changeMenuButtonText() {
+    const menuButtonElement = document.getElementById("menu-btn");
+
+    menuButtonElement.addEventListener('mouseover', (event) => {
+        menuButtonElement.textContent = "Click here";
+    });
+
+    menuButtonElement.addEventListener('mouseout', (event) => {
+        menuButtonElement.textContent = "See menu";
+    });
+}
+
 function main() {
     loadPage();
+    changeMenuButtonText();
 };
 
 main();
