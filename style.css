@@ -24,19 +24,19 @@ body{
 }
 
 .primary-color{color: #BC9A6C;}
+.dark-color{color: #333333;}
 
 
 .header-wrapper,
 .wrapper,
 .footer-wrapper{
   width: 100%;
-  max-width: 960px;
+  max-width: 1370px;
   margin: 0 auto;
 }
 
 .header-outer-wrapper{
     width: 100%;
-    padding: 0 7%;
     display: table;
     margin: 0;
     max-width: none;
@@ -64,7 +64,11 @@ nav h1{color: white;}
 
 #home .left-side{
   padding-right: 10px;
+}
 
+#home .right-side{
+  flex: 0 0 50%;
+  text-align: right;
 }
 
 #home h1{font-size: 55px;}
@@ -85,4 +89,32 @@ button{
 
 button:hover{
   background-color: #56452f;
+}
+
+#about{
+  min-height: 720px;
+  overflow: hidden;
+  margin: 45px 0;
+}
+
+#about h4{font-size: 18px;}
+
+#about .right-side{padding-left: 40px;}
+
+#about .left-side{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#about .img-back {
+  position: relative;
+  top: 0;
+  left: 60px;
+}
+#about .img-front {
+  position: absolute;
+  top: 368px;
+  left: 0;
+  z-index: 1;
 }
