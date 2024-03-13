@@ -16,23 +16,34 @@ function loadPage() {
 }
 
 /**
- * Get Menu button and change the text
+ * Get Menu button and add click, mouseover, and mouseout event listeners
+ * Click - Scroll to the menu section
+ * Mouseover - Update button text
+ * Mouseout - Update button text
  */
-function changeMenuButtonText() {
+function menuButtonListeners() {
     const menuButtonElement = document.getElementById("menu-btn");
 
-    menuButtonElement.addEventListener('mouseover', (event) => {
-        menuButtonElement.textContent = "Click here";
+    // Scroll to the Menu section
+    menuButtonElement.addEventListener('click', () => {
+        const menuSectionElement = document.getElementById('menu');
+        menuSectionElement.scrollIntoView({ behavior: "smooth" });
     });
 
+    // Change the button text
+    menuButtonElement.addEventListener('mouseover', (event) => {
+        buttonElement.textContent = "Click here";
+    });
+
+    // Change the button text
     menuButtonElement.addEventListener('mouseout', (event) => {
-        menuButtonElement.textContent = "See menu";
+        buttonElement.textContent = "See menu";
     });
 }
 
 function main() {
     loadPage();
-    changeMenuButtonText();
+    menuButtonListeners();
 };
 
 main();
