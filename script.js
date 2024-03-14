@@ -16,6 +16,15 @@ function loadPage() {
 }
 
 /**
+ * After 4 seconds, get the welcome-text element and change its text
+ */
+function changeWelcomeText() {
+    setTimeout(() => {
+        document.getElementById('welcome-text').textContent = 'Welcome to coffee hut';
+    }, 4000);
+}
+
+/**
  * Add listener to the home image element
  * Mouseover - Add border
  * Mouseout - Remove border
@@ -63,6 +72,7 @@ function menuButtonListeners() {
 function main() {
     loadPage();
 
+    changeWelcomeText();
     homeImageHoverListener();
     menuButtonListeners();
 };
