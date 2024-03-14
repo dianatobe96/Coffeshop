@@ -1,3 +1,4 @@
+// 8
 /**
  * Simulate the loading of the page
  */
@@ -13,6 +14,22 @@ function loadPage() {
         const loaderElement = document.getElementById("loading");
         loaderElement.classList.add('hidden');
     }, 2000);
+}
+
+/**
+ * Add clients' logo to the Clients section
+ */
+function addClientsLogo() {
+    const clientsSection = document.querySelector('#clients .client-list');
+
+    for (let index = 1; index < 7; index++) {
+        const clientImg = document.createElement('img');
+        clientImg.src = `./assets/images/client${index}.png`;
+        clientImg.alt = 'Client Logo';
+        clientImg.classList.add('margin-1');
+
+        clientsSection.appendChild(clientImg);
+    }
 }
 
 /**
@@ -72,6 +89,7 @@ function menuButtonListeners() {
 function main() {
     loadPage();
 
+    addClientsLogo();
     changeWelcomeText();
     homeImageHoverListener();
     menuButtonListeners();
