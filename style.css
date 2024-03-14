@@ -59,6 +59,7 @@ section {
 .footer-outer-wrapper {
   margin: 0;
   height: 100svh;
+  min-height: 564px;
   
 }
 
