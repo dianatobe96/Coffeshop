@@ -298,6 +298,8 @@ button:hover {
 
 #contact{color: #fff;}
 
+#contact ul {padding-left: 0;}
+
 #contact ul li{
   overflow: hidden;
   list-style: none;
@@ -309,7 +311,11 @@ button:hover {
   display: inline-block;
 }
 
-#contact ul li img{float: left;}
+#contact ul li img{
+  float: left;
+  margin-right: 15px;
+}
+
 #contact ul li p{margin: 0;}
 
 @keyframes spin {
