@@ -308,7 +308,9 @@ button:hover {
   margin-right: 15px;
 }
 
-#contact ul li p{margin: 0;}
+#contact ul li p{
+  margin: 0;
+}
 
 @keyframes spin {
   0% {
