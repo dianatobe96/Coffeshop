@@ -1,4 +1,8 @@
-// 8
+// Constants
+const SECTION_IDS = ['home', 'about', 'why-choose-us', 'categories', 'menu', 'team', 'clients', 'contact'];
+const PRIMARY_COLOR = "#bc9a6c";
+// end Constants
+
 /**
  * Simulate the loading of the page
  */
@@ -30,6 +34,17 @@ function addClientsLogo() {
 
         clientsSection.appendChild(clientImg);
     }
+}
+
+/**
+ * Get the element of each section and change the color of its title
+ */
+function changeSectionTitlesColor() {
+    const sectionTitleElements = SECTION_IDS
+        .map(sectionId => document.querySelector(`#${sectionId} .title`))
+        .filter(titleElement => !!titleElement);
+
+    sectionTitleElements.forEach(sectionTitleElement => sectionTitleElement.style.color = PRIMARY_COLOR);
 }
 
 /**
@@ -90,6 +105,7 @@ function main() {
     loadPage();
 
     addClientsLogo();
+    changeSectionTitlesColor();
     changeWelcomeText();
     homeImageHoverListener();
     menuButtonListeners();

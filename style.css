@@ -32,10 +32,6 @@ section {
   flex: 1;
 }
 
-.primary-color {
-  color: #bc9a6c;
-}
-
 .dark-color {
   color: #333333;
 }
@@ -274,10 +270,6 @@ button:hover {
 
 #clients {
   text-align: center;
-
-  & p {
-    color: #bc9a6c;
-  }
 }
 
 /* Loader style */
