@@ -10,9 +10,37 @@ function loadPage() {
         mainContentElement.classList.remove('hidden');
 
         // Get loader element to add "hidden" class
-        const loaderElement = document.getElementById("loader");
+        const loaderElement = document.getElementById("loading");
         loaderElement.classList.add('hidden');
     }, 2000);
+}
+
+/**
+ * After 4 seconds, get the welcome-text element and change its text
+ */
+function changeWelcomeText() {
+    setTimeout(() => {
+        document.getElementById('welcome-text').textContent = 'Welcome to coffee hut';
+    }, 4000);
+}
+
+/**
+ * Add listener to the home image element
+ * Mouseover - Add border
+ * Mouseout - Remove border
+ */
+function homeImageHoverListener() {
+    const homeImageElement = document.querySelector('#home .right-side img');
+
+    // Change the button text
+    homeImageElement.addEventListener('mouseover', () => {
+        homeImageElement.style.border = 'solid 12px #bc9a6c';
+    });
+
+    // Change the button text
+    homeImageElement.addEventListener('mouseout', () => {
+        homeImageElement.style.border = 'none';
+    });
 }
 
 /**
@@ -31,18 +59,21 @@ function menuButtonListeners() {
     });
 
     // Change the button text
-    menuButtonElement.addEventListener('mouseover', (event) => {
-        buttonElement.textContent = "Click here";
+    menuButtonElement.addEventListener('mouseover', () => {
+        menuButtonElement.textContent = "Click here";
     });
 
     // Change the button text
-    menuButtonElement.addEventListener('mouseout', (event) => {
-        buttonElement.textContent = "See menu";
+    menuButtonElement.addEventListener('mouseout', () => {
+        menuButtonElement.textContent = "See menu";
     });
 }
 
 function main() {
     loadPage();
+
+    changeWelcomeText();
+    homeImageHoverListener();
     menuButtonListeners();
 };
 

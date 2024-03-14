@@ -44,23 +44,6 @@ section {
   display: none !important;
 }
 
-/* Home section style */
-/* #home {
-  & .left-arrow, & .right-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-  }
-
-  & .left-arrow {
-    left: 0;
-  }
-
-  & .right-arrow {
-    right: 0;
-  }
-} */
-
 .header-wrapper,
 .wrapper,
 .footer-wrapper {
@@ -96,7 +79,8 @@ section {
   margin-left: 25px;
   transition: all 0.5s ease;
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     color: #bc9a6c;
   }
 }
@@ -113,6 +97,10 @@ nav,
 #home .right-side {
   text-align: center;
 
+  &.highlight {
+    border: solid 12px #bc9a6c;
+  }
+  
   & img {
     max-width: 65svh;
   }
@@ -291,7 +279,7 @@ button:hover {
 }
 
 /* Loader style */
-.loading {
+#loading {
   display: flex;
   justify-content: center;
   padding: 3rem;
