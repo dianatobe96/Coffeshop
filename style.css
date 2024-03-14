@@ -297,6 +297,8 @@ button:hover {
 
 #contact{color: #fff;}
 
+#contact ul li{list-style: none;}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
