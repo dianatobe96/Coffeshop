@@ -1,6 +1,6 @@
 # Coffee Shop App
 
-## HTML
+## HTML (Diana)
 - Coffee images
 - Icons assets
 - Header
@@ -11,7 +11,7 @@
   - Paragraph, List, Article, Header texts (h1, h2, h3, h4, h5, h6), Div, Button
   - Footer
 
-## CSS
+## CSS (Samira)
 - Background images and colors
 - Wrappers
 - Button, List, Anchor, Image, Font styles
@@ -19,7 +19,7 @@
 - Loading style
 - Image positions (relative and absolute)
 
-## JavaScript
+## JavaScript (Aghata)
 - Method mocking the page loading (using timeout)
 - Method adding the clients' logo into the Clients section
 - Method adding primary color to all page titles
