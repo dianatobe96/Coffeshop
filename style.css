@@ -84,10 +84,10 @@ section {
   text-decoration: none;
   margin-left: 25px;
   transition: all 0.5s ease;
-}
 
-.pages a:hover {
-  color: #bc9a6c;
+  &:hover, &.active {
+    color: #bc9a6c;
+  }
 }
 
 nav,
