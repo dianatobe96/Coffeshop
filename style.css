@@ -44,6 +44,10 @@ section {
   display: none !important;
 }
 
+.margin-1 {
+  margin: 1rem;
+}
+
 .header-wrapper,
 .wrapper,
 .footer-wrapper {
@@ -98,10 +102,6 @@ nav,
 #home .right-side {
   text-align: center;
 
-  &.highlight {
-    border: solid 12px #bc9a6c;
-  }
-  
   & img {
     max-width: 65svh;
   }
