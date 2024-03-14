@@ -72,11 +72,22 @@ section {
   100% of the small viewport height - To fill the screen when the browser UI is at its largest,
   and the website content is at its smallest.
 */
-.header-outer-wrapper {
+.header-outer-wrapper,
+.footer-outer-wrapper {
   margin: 0;
   height: 100svh;
-  background: url("./assets/images/coffee_bean.png") repeat center center
+  
+}
+
+.header-outer-wrapper{
+    background: url("./assets/images/coffee_bean.png") repeat center center
     #1e1e1e;
+}
+
+.footer-outer-wrapper{
+  height: 60svh;
+  background: url("./assets/images/footherphoto.png") no-repeat center center
+  #1E1E1E;
 }
 
 .pages a {
