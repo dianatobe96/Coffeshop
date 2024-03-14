@@ -300,6 +300,11 @@ button:hover {
 
 #contact ul li{list-style: none;}
 
+#contact ul li img,
+#contact ul li p{
+  display: inline-block;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
