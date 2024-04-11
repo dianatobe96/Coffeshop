@@ -377,3 +377,18 @@ button:hover {
   font-size: 1.2rem;
 }
 
+.botton {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 190px;
+  height: 60px;
+  color: #fff;
+  background-color: #9b7e57;
+  margin-top: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: .5rem;
+}
+
