@@ -35,7 +35,7 @@
           class="d-flex align-items-center justify-content-between"
         >
           <div class="left-side">
-            <p id="welcome-text">Hi</p>
+            <p id="welcome-text">Welcome to coffee hut</p>
             <h1 class="title">Heal the world with coffee</h1>
             <p>
               The aromatic elixir that awakens the mind, fuels creativity, and
@@ -52,8 +52,8 @@
       <!-- header-wrapper ends -->
     </div>
 
-    <div id="main-content" class="wrapper hidden">
-      <main>
+    <div id="main-content" class="hidden">
+      <main class="wrapper">
         <section id="about" class="d-flex">
           <div class="left-side">
             <img
@@ -357,64 +357,75 @@
 
           <div
             class="client-list d-flex align-items-center justify-content-center"
-          ></div>
-        </section>
-
-
-          <section id="contact">
-            <h2>Contact</h2>
-
-              <form class="form">
-                  <fieldset>
-
-                    <div class="form-inputs">
-
-                        <div class="inputs">
-                          <label>Name</label>
-                          <input type="text" placeholder="Name">
-                        </div>
-                      
-                        <div class="inputs">
-                          <label>Email</label>
-                          <input type="email" placeholder="Email">
-                        </div>
-                        
-                        <div class="inputs">
-                          <label>Message</label>
-                          <textarea class="textarea"></textarea>
-                    </div>
-
-                  </div>
-                      
-                    <div>
-                      <input class="botton" type="submit" value="Send">
-                    </div>
-                      
-                  </fieldset>
-              </form>
-
-          </section>
-      </main>
-    </div>
-
-    <div id="loading">
-      <div class="loader"></div>
-    </div>
-
-    <div class="footer-outer-wrapper d-flex align-items-center">
-      <div class="footer-wrapper">
-        <footer id="contact" class="d-flex align-items-center">
-          <div class="left-side">
-            <h2>Coffee Shop</h2>
-            <p>
-              To our coffee oasis! Explore our menu, discover our story, and join
-              our community. Contact us for inquiries. Enjoy your brew!
-            </p>
+          >
+            <img
+              class="margin-1"
+              src="./assets/images/client1.png"
+              alt="Client Logo"
+            />
+            <img
+              class="margin-1"
+              src="./assets/images/client2.png"
+              alt="Client Logo"
+            />
+            <img
+              class="margin-1"
+              src="./assets/images/client3.png"
+              alt="Client Logo"
+            />
+            <img
+              class="margin-1"
+              src="./assets/images/client4.png"
+              alt="Client Logo"
+            />
+            <img
+              class="margin-1"
+              src="./assets/images/client5.png"
+              alt="Client Logo"
+            />
+            <img
+              class="margin-1"
+              src="./assets/images/client6.png"
+              alt="Client Logo"
+            />
           </div>
-  
+        </section>
+      </main>
+
+      <section id="contact">
+        <h2 class="title">Contact</h2>
+
+        <div class="contact wrapper d-flex align-items-center">
+          <div class="left-side">
+            <form class="form">
+              <fieldset>
+                <div class="form-inputs">
+                  <div class="inputs-inline">
+                    <div class="inputs">
+                      <label>Name</label>
+                      <input type="text" placeholder="Name" />
+                    </div>
+
+                    <div class="inputs">
+                      <label>Email</label>
+                      <input type="email" placeholder="Email" />
+                    </div>
+                  </div>
+
+                  <div class="inputs">
+                    <label>Message</label>
+                    <textarea class="textarea"></textarea>
+                  </div>
+                </div>
+
+                <div>
+                  <button type="submit">Send</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
           <div class="right-side">
-            <p>Contact us</p>
-  
             <ul>
               <li>
                 <img src="./assets/icons/iconMapPin.svg" alt="iconmap" />
@@ -434,6 +445,22 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="loading">
+      <div class="loader"></div>
+    </div>
+
+    <div class="footer-outer-wrapper d-flex align-items-center">
+      <div class="footer-wrapper">
+        <footer>
+          <h2 class="title">Coffee Shop</h2>
+          <p>
+            To our coffee oasis! Explore our menu, discover our story, and join
+            our community. Contact us for inquiries. Enjoy your brew!
+          </p>
         </footer>
       </div>
       <!-- footer-wrapper ends -->
